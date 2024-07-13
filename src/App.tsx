@@ -58,6 +58,11 @@ const App = () => {
     setTargetCurrency(baseCurrency);
   };
 
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    fetchExchangeRates();
+  };
+
   return (
     <div className="relative min-h-screen bg-gray-100 flex flex-col items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
       <div className="absolute top-0 left-0 w-full h-3/4 bg-gradient-to-b from-purple-600 to-transparent"></div>
@@ -70,13 +75,7 @@ const App = () => {
         </h4>
       </div>
       <div className="relative max-w-md w-full p-10 mt-6 shadow-2xl rounded-xl border-gray-400 bg-white">
-        <form
-          className="space-y-6"
-          onSubmit={(e) => {
-            e.preventDefault();
-            fetchExchangeRates();
-          }}
-        >
+        <form className="space-y-6" onSubmit={handleSubmit}>
           <div className="flex flex-col justify-between items-center">
             <CurrencySelector
               label="From:"
@@ -105,7 +104,6 @@ const App = () => {
             <DateSelector value={date} onChange={setDate} />
           </div>
           <Button
-            onClick={fetchExchangeRates}
             type="submit"
             className="w-full bg-purple-500 hover:bg-purple-700"
           >
