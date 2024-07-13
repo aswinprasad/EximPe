@@ -9,12 +9,6 @@ interface AmountInputProps {
 const AmountInput = ({ value, onChange }: AmountInputProps) => {
   return (
     <div className="w-full">
-      {/* <label>Amount:</label>
-      <input
-        type="number"
-        value={value}
-        onChange={(e) => onChange(parseFloat(e.target.value))}
-      /> */}
       <Label htmlFor="amount">Amount:</Label>
       <Input
         id="amount"

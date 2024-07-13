@@ -21,15 +21,7 @@ const CurrencySelector = ({
   currencies,
 }: CurrencySelectorProps) => {
   return (
-    <div>
-      {/* <label>{label}:</label>
-      <select value={value} onChange={(e) => onChange(e.target.value)}>
-        {currencies.map(([code, name]) => (
-          <option key={code} value={code}>
-            {code} - {name}
-          </option>
-        ))}
-      </select> */}
+    <div className="w-full">
       <Label htmlFor="currency">{label}</Label>
       <Select onValueChange={onChange} value={value}>
         <SelectTrigger id="currency" className="w-full">

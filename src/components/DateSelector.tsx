@@ -20,12 +20,6 @@ interface DateSelectorProps {
 const DateSelector = ({ value, onChange }: DateSelectorProps) => {
   return (
     <div className="w-full">
-      {/* <label>Date:</label>
-      <input
-        type="date"
-        value={value}
-        onChange={(e) => onChange(e.target.value)}
-      /> */}
       <Label htmlFor="date">Date:</Label>
       <Popover>
         <PopoverTrigger asChild>
