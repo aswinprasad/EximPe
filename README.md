@@ -6,6 +6,9 @@ This is a web application built using React, TypeScript, Vite, and Tailwind CSS 
 - List available currencies for both the source and target currency
 - Change the date for which the currency conversion rates are applied
 
+<img src="https://github.com/user-attachments/assets/14dde811-a258-4fb3-8c72-d82d363631e6" data-canonical-src="https://github.com/user-attachments/assets/14dde811-a258-4fb3-8c72-d82d363631e6" width="500" />
+
+
 ## Installation
 
 1. Clone the repository:
