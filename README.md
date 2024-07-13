@@ -1,31 +1,65 @@
-# React + TypeScript + Vite
+# Currency Converter Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a web application built using React, TypeScript, Vite, and Tailwind CSS that allows users to convert currencies using real-time exchange rates provided by the ExchangeRatesAPI. The application provides the following features:
 
-Currently, two official plugins are available:
+- Convert an amount from one currency to another
+- List available currencies for both the source and target currency
+- Change the date for which the currency conversion rates are applied
 
+## Installation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Clone the repository:
 
-## Expanding the ESLint configuration
+   ```
+   git clone https://github.com/aswinprasad/EximPe.git
+   ```
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+2. Navigate to the project directory:
 
-- Configure the top-level `parserOptions` property like this:
+   ```
+   cd EximPe
+   ```
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+3. Install the dependencies:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+   ```
+   npm install
+   ```
+
+## Usage
+
+1. Start the development server:
+
+   ```
+   npm run dev
+   ```
+
+2. Open your browser and visit `http://localhost:5173/EximPe/` to access the application.
+
+3. Select the source and target currencies from the dropdown menus.
+
+4. Enter the amount you want to convert in the input field.
+
+5. Choose the date for which you want to apply the currency conversion rates.
+
+6. The converted amount will be displayed based on the selected currencies and date.
+
+## Deployment
+
+The application is deployed using GitHub Pages. You can access the live version of the application at:
+
+[https://aswinprasad.github.io/EximPe/](https://aswinprasad.github.io/EximPe/)
+
+## Technologies Used
+
+- React: A JavaScript library for building user interfaces
+- TypeScript: A typed superset of JavaScript that compiles to plain JavaScript
+- Vite: A fast build tool and development server for modern web applications
+- Tailwind CSS: A utility-first CSS framework for rapidly building custom designs
+- ExchangeRatesAPI: An API that provides exchange rates and currency data
+
+## API
+
+The application utilizes the ExchangeRatesAPI to fetch exchange rates and currency data. The API endpoint used is:
+
+[https://www.exchangerate-api.com/](https://www.exchangerate-api.com/)
